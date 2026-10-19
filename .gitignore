@@ -4,3 +4,4 @@
 # Local documents (not published)
 /*.docx
 /*.doc
+.DS_Store

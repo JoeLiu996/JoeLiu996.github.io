@@ -1,2 +1,6 @@
 # Local paper drafts (not published)
 /*.pdf
+
+# Local documents (not published)
+/*.docx
+/*.doc

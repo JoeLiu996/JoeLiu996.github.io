@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joe Liu (刘纳州)</title>
-  <meta name="description" content="Joe (Nazhou) Liu — researcher and engineer working on LLM post-training, reinforcement learning, and autonomous research agents.">
+  <meta name="description" content="Joe (Nazhou) Liu works on LLM post-training, reinforcement learning, and autonomous research agents.">
   <meta name="author" content="Nazhou Liu">
   <meta property="og:title" content="Joe Liu (刘纳州)">
   <meta property="og:description" content="LLM post-training, reinforcement learning, and autonomous research agents.">
@@ -15,37 +15,50 @@
 </head>
 <body>
   <header class="topbar">
-    <nav class="container nav">
+    <nav class="shell nav" aria-label="Primary">
       <a class="brand" href="#about">Joe Liu</a>
-      <ul class="nav-links">
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#service">Service</a></li>
-      </ul>
+
+      <div class="nav-links">
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#service">Service</a>
+      </div>
+
+      <details class="nav-menu">
+        <summary aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </summary>
+        <div class="nav-menu-panel">
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#service">Service</a>
+        </div>
+      </details>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="shell">
     <section id="about" class="hero">
       <!-- TODO: replace with a real photo, e.g. assets/images/profile.jpg -->
-      <img class="avatar" src="assets/images/profile.svg" alt="Joe Liu" width="200" height="200">
+      <img class="portrait" src="assets/images/profile.svg" alt="Joe Liu" width="400" height="500">
 
       <div class="hero-text">
-        <h1>Joe Liu <span class="alt-name">(Nazhou Liu · 刘纳州)</span></h1>
-        <p class="role">Member of Technical Staff · Prentis AI</p>
+        <h1>Joe Liu <span class="alt">(Nazhou)</span> <span class="zh" lang="zh-Hans">刘纳州</span></h1>
 
         <!-- TODO: placeholder bio, rewrite in your own words -->
-        <p>
-          I work on <strong>LLM post-training</strong>, <strong>reinforcement learning for reasoning</strong>,
-          and <strong>long-horizon autonomous research agents</strong>. At Prentis AI I build and evaluate
-          AI researcher agents; before that I was an AI Algorithm Engineer at HPC-AI Tech, where I worked on
-          RL algorithms and post-training infrastructure.
+        <p class="lead">
+          I am a Member of Technical Staff at Prentis AI, working on <strong>LLM post-training</strong>,
+          <strong>reinforcement learning for reasoning</strong>, and <strong>long-horizon autonomous research agents</strong>.
+          I build AI researcher agents and study how and why they fail.
         </p>
         <p>
-          I received my B.Eng. in Electrical and Electronic Engineering (Distinction, Machine Learning
-          specialization) from Nanyang Technological University, where I was an NTU President Research Scholar.
+          Previously I was an AI Algorithm Engineer at <a href="https://hpc-ai.com/" target="_blank" rel="noopener">HPC-AI Tech</a>,
+          working on RL algorithms and post-training infrastructure. I received my B.Eng. from
+          <a href="https://www.ntu.edu.sg/" target="_blank" rel="noopener">Nanyang Technological University</a>.
         </p>
 
         <!-- Icons: Lucide (mail, ISC) and Simple Icons (brands, CC0) -->
@@ -74,128 +87,146 @@
       </div>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="section">
       <h2>Publications</h2>
-      <p class="note">* equal contribution</p>
-      <ol class="pubs">
-        <li>
+      <div class="rows">
+        <article class="row pub">
+          <p class="kicker">IAB Workshop @ NeurIPS 2026 · Under review at ACL 2027</p>
+          <h3><a href="https://arxiv.org/abs/2608.14905" target="_blank" rel="noopener">AutoResearchEval</a></h3>
           <p class="pub-title">How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks</p>
-          <p class="pub-authors"><b>N. Liu*</b>, Y. Fei*, X. Yu*, S. Chen, L. Li, R. Thapa, M. Ciobanu, N. P. Singh, Q. Mao, R. Das</p>
-          <p class="pub-venue">IAB Workshop @ NeurIPS 2026 (non-archival); under review at ACL 2027</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2608.14905" target="_blank" rel="noopener">arXiv</a></p>
-        </li>
-        <li>
+          <p class="authors"><b>Nazhou Liu*</b>, Y. Fei*, X. Yu*, S. Chen, L. Li, R. Thapa, M. Ciobanu, N. P. Singh, Q. Mao, R. Das</p>
+          <p>800 agent trajectories with artifact-aware, process-level failure annotations over a 100-task, 7-domain research suite, organized by ARFT — a taxonomy of 45 failure patterns for autonomous research agents.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2608.14905" target="_blank" rel="noopener">Paper</a></p>
+        </article>
+
+        <article class="row pub">
+          <p class="kicker">arXiv 2025</p>
+          <h3><a href="https://arxiv.org/abs/2503.15952" target="_blank" rel="noopener">AGPO</a></h3>
           <p class="pub-title">Adaptive Group Policy Optimization: Towards Stable Training and Token-Efficient Reasoning</p>
-          <p class="pub-authors">C. Li, <b>N. Liu</b>, K. Yang</p>
-          <p class="pub-venue">arXiv preprint, 2025</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2503.15952" target="_blank" rel="noopener">arXiv</a></p>
-        </li>
-        <li>
-          <p class="pub-title">MatHarness: Towards Long-Horizon Open-ended AutoResearch for Computational Materials Science</p>
-          <p class="pub-authors">Y. Fei, L. Li, S. Chen, <b>N. Liu</b>, X. Yu, M. Ciobanu, N. P. Singh, Q. Mao, R. Das</p>
-          <p class="pub-venue">AI4Mat Workshop @ NeurIPS 2026</p>
-        </li>
-        <li>
-          <p class="pub-title">Reconstruction: A Blind Benchmark for Recovering Research Ideas from Pre-Publication Bibliographies</p>
-          <p class="pub-authors">S. Chen, Y. Fei, <b>N. Liu</b>, X. Yu, L. Li, R. Thapa, M. Ciobanu, Q. Mao, R. Das</p>
-          <p class="pub-venue">arXiv preprint, 2026</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2608.16645" target="_blank" rel="noopener">arXiv</a></p>
-        </li>
-      </ol>
+          <p class="authors">C. Li, <b>Nazhou Liu</b>, K. Yang</p>
+          <p>A GRPO replacement that keeps policy entropy stable during RL training and reaches better accuracy with fewer chain-of-thought tokens at inference.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2503.15952" target="_blank" rel="noopener">Paper</a></p>
+        </article>
+
+        <article class="row pub">
+          <p class="kicker">AI4Mat Workshop @ NeurIPS 2026</p>
+          <h3>MatHarness</h3>
+          <p class="pub-title">Towards Long-Horizon Open-ended AutoResearch for Computational Materials Science</p>
+          <p class="authors">Y. Fei, L. Li, S. Chen, <b>Nazhou Liu</b>, X. Yu, M. Ciobanu, N. P. Singh, Q. Mao, R. Das</p>
+          <p>An end-to-end AI researcher agent from ideation to manuscript, validated on a multi-week autonomous campaign in computational chemistry.</p>
+        </article>
+
+        <article class="row pub">
+          <p class="kicker">arXiv 2026</p>
+          <h3><a href="https://arxiv.org/abs/2608.16645" target="_blank" rel="noopener">Reconstruction</a></h3>
+          <p class="pub-title">A Blind Benchmark for Recovering Research Ideas from Pre-Publication Bibliographies</p>
+          <p class="authors">S. Chen, Y. Fei, <b>Nazhou Liu</b>, X. Yu, L. Li, R. Thapa, M. Ciobanu, Q. Mao, R. Das</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2608.16645" target="_blank" rel="noopener">Paper</a></p>
+        </article>
+      </div>
+      <p class="note">* equal contribution</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section">
       <h2>Experience</h2>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Prentis AI</h3>
-          <span class="date">Apr 2026 – Present</span>
+      <div class="rows">
+        <div class="row split">
+          <div>
+            <h3>Prentis AI</h3>
+            <p class="sub">Member of Technical Staff · Shanghai</p>
+            <p>Building and evaluating long-horizon AI researcher agents (AutoResearchEval, ARFT, MatHarness).</p>
+          </div>
+          <time>Apr 2026 – Present</time>
         </div>
-        <p class="entry-sub">Member of Technical Staff · Shanghai</p>
-        <ul>
-          <li><b>AutoResearchEval &amp; ARFT.</b> Co-first-authored an open collection of 800 agent trajectories with process-level failure annotations over a 100-task, 7-domain research suite, and built ARFT, a taxonomy of 45 failure patterns for autonomous research agents.</li>
-          <li><b>MatHarness.</b> Built an end-to-end AI researcher agent spanning ideation to manuscript writing, validated on a multi-week autonomous campaign in computational chemistry.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>HPC-AI Tech</h3>
-          <span class="date">Feb 2025 – Apr 2026</span>
+        <div class="row split">
+          <div>
+            <h3>HPC-AI Tech</h3>
+            <p class="sub">AI Algorithm Engineer · Singapore &amp; Shanghai</p>
+            <p>Post-training-as-a-service SDK with a co-located FSDP + vLLM RL system; RL for reasoning LLMs (Colossal-R1, AGPO).</p>
+          </div>
+          <time>Feb 2025 – Apr 2026</time>
         </div>
-        <p class="entry-sub">AI Algorithm Engineer · Singapore &amp; Shanghai</p>
-        <ul>
-          <li><b>Fine-tuning SDK.</b> Co-developed a post-training-as-a-service platform for SFT and RL with LoRA; led core training primitives and a co-located FSDP + vLLM RL system.</li>
-          <li><b>Colossal-R1.</b> Proposed Adaptive Group Policy Optimization (AGPO) and ran large-scale RL training, improving AIME24 by 10% and LiveCodeBench by 11.4% over baselines.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>HPC-AI Tech</h3>
-          <span class="date">May 2024 – Nov 2024</span>
+        <div class="row split">
+          <div>
+            <h3>HPC-AI Tech</h3>
+            <p class="sub">AI Algorithm Engineer Intern · Singapore</p>
+            <p>Multimodal RAG and document QA in <a href="https://github.com/hpcaitech/ColossalAI" target="_blank" rel="noopener">Colossal-AI</a>.</p>
+          </div>
+          <time>May 2024 – Nov 2024</time>
         </div>
-        <p class="entry-sub">AI Algorithm Engineer Intern · Singapore</p>
-        <ul>
-          <li><b>Colossal-Reader.</b> Refactored the RAG system in <a href="https://github.com/hpcaitech/ColossalAI" target="_blank" rel="noopener">Colossal-AI</a> (+12% end-to-end accuracy) and extended it to multimodal RAG (+28% on PDFs).</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Central Provident Fund Board</h3>
-          <span class="date">May 2023 – Aug 2023</span>
+        <div class="row split">
+          <div>
+            <h3>Central Provident Fund Board</h3>
+            <p class="sub">AI Engineer Intern · Singapore</p>
+            <p>RAG system and ReAct agent to assist customer service staff.</p>
+          </div>
+          <time>May 2023 – Aug 2023</time>
         </div>
-        <p class="entry-sub">AI Engineer Intern · Singapore</p>
-        <ul>
-          <li><b>CPF Bot.</b> Built a RAG system and ReAct agent to assist customer service staff, reducing hallucination rate by 15%.</li>
-        </ul>
-      </article>
+      </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="section">
       <h2>Education</h2>
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Nanyang Technological University</h3>
-          <span class="date">Aug 2021 – May 2025</span>
+      <div class="rows">
+        <div class="row split">
+          <div>
+            <h3>Nanyang Technological University</h3>
+            <p>B.Eng. in Electrical and Electronic Engineering, with Distinction</p>
+            <p>Specialization in Machine Learning · NTU President Research Scholar</p>
+          </div>
+          <time>2021 – 2025</time>
         </div>
-        <p class="entry-sub">B.Eng. in Electrical and Electronic Engineering · Singapore</p>
-        <ul>
-          <li>Graduated with Distinction, specialization in Machine Learning</li>
-          <li>NTU President Research Scholar</li>
-        </ul>
-      </article>
+      </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
       <h2>Skills</h2>
-      <dl class="skills">
-        <dt>LLM Post-Training</dt>
-        <dd>SFT, RLHF, DPO, RLVR, on-policy distillation; LoRA and full-parameter distributed training</dd>
-        <dt>Agents</dt>
-        <dd>ReAct, AutoResearch and long-horizon agents; harness design and failure analysis</dd>
-        <dt>Infrastructure</dt>
-        <dd>verl, slime, vLLM, SGLang, PyTorch FSDP/DDP, DeepSpeed</dd>
-        <dt>Architecture</dt>
-        <dd>Decoder-only transformers, GQA/MLA, MoE routing, RoPE, scaling laws</dd>
-        <dt>Languages</dt>
-        <dd>English, Mandarin Chinese</dd>
-      </dl>
+      <div class="rows">
+        <div class="row">
+          <h3>LLM Post-Training</h3>
+          <p>SFT, RLHF, DPO, RLVR and on-policy distillation, with LoRA and full-parameter distributed training.</p>
+        </div>
+        <div class="row">
+          <h3>Agents</h3>
+          <p>ReAct, AutoResearch and long-horizon agents; harness design and failure analysis.</p>
+        </div>
+        <div class="row">
+          <h3>Infrastructure</h3>
+          <p>verl, slime, vLLM, SGLang, PyTorch FSDP/DDP, DeepSpeed.</p>
+        </div>
+        <div class="row">
+          <h3>Languages</h3>
+          <p>English, Mandarin Chinese.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="service">
+    <section id="service" class="section">
       <h2>Service</h2>
-      <ul class="plain">
-        <li>Reviewer, Interpreting Agent Behavior (IAB) Workshop @ NeurIPS 2026</li>
-        <li>Main Committee, Institution of Engineering and Technology (IET), NTU, 2023–2025</li>
-      </ul>
+      <div class="rows">
+        <div class="row">
+          <h3>Reviewer</h3>
+          <p>Interpreting Agent Behavior (IAB) Workshop @ NeurIPS 2026.</p>
+        </div>
+        <div class="row split">
+          <div>
+            <h3>Main Committee</h3>
+            <p>Institution of Engineering and Technology (IET), NTU.</p>
+          </div>
+          <time>2023 – 2025</time>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="container footer">
-    <p>&copy; 2026 Joe Liu</p>
+  <footer class="footer">
+    <div class="shell">&copy; 2026 Joe Liu</div>
   </footer>
+
+  <script>
+    document.querySelectorAll(".nav-menu-panel a").forEach((a) =>
+      a.addEventListener("click", () => a.closest("details").removeAttribute("open"))
+    );
+  </script>
 </body>
 </html>

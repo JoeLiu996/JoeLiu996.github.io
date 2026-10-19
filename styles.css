@@ -250,7 +250,7 @@ a.pub-image:hover img { transform: scale(1.02); }
 .pub .pub-title { color: var(--text); font-weight: 600; }
 .pub .authors { color: var(--muted); }
 .pub .authors b { color: var(--text); }
-.pub .pub-links { margin-top: 0.6rem; }
+.pub .pub-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-top: 0.6rem; }
 .pub-links a { font-size: 0.92rem; font-weight: 700; }
 
 .note { margin: 0.8rem 0 0; color: var(--muted); font-size: 0.85rem; }

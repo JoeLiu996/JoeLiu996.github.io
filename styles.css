@@ -113,24 +113,29 @@ h1 { margin: 0; font-size: 2rem; font-weight: 600; }
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
   margin: 1.25rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .links a {
-  display: inline-block;
-  padding: 0.3rem 0.85rem;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  font-size: 0.9rem;
+  border-radius: 50%;
+  color: var(--muted);
+  transition: color 0.15s, border-color 0.15s;
 }
 
 .links a:hover {
+  color: var(--accent);
   border-color: var(--accent);
-  text-decoration: none;
 }
+
+.links svg { width: 19px; height: 19px; }
 
 /* Sections */
 section { padding: 1.5rem 0; }

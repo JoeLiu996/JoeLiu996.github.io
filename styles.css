@@ -206,7 +206,33 @@ h1 .zh { font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif; font-si
 }
 
 /* Publications */
-.pub { padding-top: 2.1rem; padding-bottom: 2.1rem; }
+.pub {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 2.25rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.pub-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 170px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.pub-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.18s;
+}
+
+a.pub-image:hover img { transform: scale(1.02); }
 
 .row .kicker {
   margin: 0;
@@ -260,5 +286,7 @@ h1 .zh { font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif; font-si
   .row { padding-left: 0.8rem; }
   .split { flex-direction: column; gap: 0.2rem; }
   .split time { order: -1; font-size: 0.9rem; }
+  .pub { grid-template-columns: 1fr; gap: 1.1rem; }
+  .pub-image { width: 100%; height: auto; aspect-ratio: 16 / 10; }
   .pub h3 { font-size: 1.35rem; }
 }

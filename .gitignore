@@ -5,3 +5,11 @@
 /*.docx
 /*.doc
 .DS_Store
+
+# Local photos (only assets/ is published)
+/*.jpg
+/*.JPG
+/*.jpeg
+/*.png
+/*.heic
+/*.HEIC

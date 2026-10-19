@@ -18,4 +18,4 @@ python3 -m http.server 8000
 ## Editing
 
 - Content: `index.html` (each section is clearly marked).
-- Photo: replace `assets/images/profile.svg` with e.g. `profile.jpg` and update the `<img>` src.
+- Photo: `assets/images/profile.jpg` (4:5, 800×1000).
